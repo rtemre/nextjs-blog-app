@@ -1,4 +1,5 @@
 import AllPosts from "../../components/posts/all-posts";
+import { getAllPosts } from "../../lib/posts-util";
 const DUMMY_POSTS = [
   {
     slug: "getting-started-01",
@@ -33,7 +34,16 @@ const DUMMY_POSTS = [
     date: "2024-06-10",
   },
 ];
-function AllPostsPage(params) {
-  return <AllPosts posts={DUMMY_POSTS} />;
+function AllPostsPage(props) {
+  return <AllPosts posts={props.posts} />;
 }
 export default AllPostsPage;
+
+export function getStaticProps(params) {
+  const allPosts = getAllPosts();
+  return {
+    props: {
+      posts: allPosts,
+    },
+  };
+}

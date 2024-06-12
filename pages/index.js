@@ -1,7 +1,8 @@
 import FeaturedPosts from "../components/home-page/featured-post";
 import Hero from "../components/home-page/hero";
+import { getFeaturedPosts } from "../lib/posts-util";
 
-function HomePage(params) {
+function HomePage(props) {
   const DUMMY_POSTS = [
     {
       slug: "getting-started-01",
@@ -39,8 +40,17 @@ function HomePage(params) {
   return (
     <>
       <Hero />
-      <FeaturedPosts posts={DUMMY_POSTS} />
+      <FeaturedPosts posts={props.posts} />
     </>
   );
 }
 export default HomePage;
+
+export function getStaticProps(params) {
+  const featuredPost = getFeaturedPosts();
+  return {
+    props: {
+      posts: featuredPost,
+    },
+  };
+}
