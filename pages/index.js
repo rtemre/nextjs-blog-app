@@ -41,7 +41,7 @@ function HomePage(props) {
   return (
     <>
       <Head>
-        <title>Raman's Blog</title>
+        <title>Raman&apos;s Blog</title>
         <meta name="description" content="I post about web development" />
       </Head>
       <Hero />
