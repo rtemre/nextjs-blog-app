@@ -5,7 +5,7 @@ function Hero(params) {
     <section className={classes.hero}>
       <div className={classes.image}>
         <Image
-          src={"/images/site/man.png"}
+          src={"/images/site/myprofile.jpg"}
           alt="A hero image will show"
           width={300}
           height={300}
