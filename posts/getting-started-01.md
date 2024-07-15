@@ -13,8 +13,8 @@ The Next.js 15 Release Candidate (RC) is now available. This early version allow
 - **React**: Support for the React 19 RC, React Compiler (Experimental), and hydration error improvements
 - **Caching**: fetch requests, GET Route Handlers, and client navigations are no longer cached by default
 - **Partial Prerendering (Experimental)**: New Layout and Page config option for incremental adoption
-- **`next/after` (Experimental)**: New API to execute code after a response has finished streaming
-- **`create-next-app`**: Updated design and a new flag to enable Turbopack in local development
+- **next/after (Experimental)**: New API to execute code after a response has finished streaming
+- **create-next-app**: Updated design and a new flag to enable Turbopack in local development
 Bundling external packages (Stable): New config options for App and Pages Router
 
 More details [here](https://nextjs.org/blog/next-15-rc).
