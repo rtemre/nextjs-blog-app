@@ -20,4 +20,4 @@ function printBasics() {
 printBasics();
 ```
 
-Learn more about it [here](https://academind.com).
+Learn more about it [here](https://en.wikibooks.org/wiki/JavaScript).
